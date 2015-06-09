@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the WWM Content Types feature.
+ */
+
+include_once 'wwm_content_types.features.inc';
