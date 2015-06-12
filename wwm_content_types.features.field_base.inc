@@ -107,25 +107,6 @@ function wwm_content_types_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_media_player'
-  $field_bases['field_media_player'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_media_player',
-    'indexes' => array(
-      'fid' => array(
-        0 => 'fid',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'mediafront',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'mediaplayer',
-  );
-
   // Exported field_base: 'field_pr_about'
   $field_bases['field_pr_about'] = array(
     'active' => 1,
