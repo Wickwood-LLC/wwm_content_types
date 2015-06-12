@@ -133,7 +133,6 @@ function wwm_content_types_field_default_field_instances() {
       'module' => 'taxonomy',
       'settings' => array(
         'autocomplete_path' => 'taxonomy/autocomplete',
-        'content_taxonomy_autocomplete_new_terms' => 'allow',
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
@@ -335,23 +334,19 @@ function wwm_content_types_field_default_field_instances() {
   // Exported field_instance: 'node-page-body'
   $field_instances['node-page-body'] = array(
     'bundle' => 'page',
-    'default_value' => array(
-      0 => array(
-        'summary' => array(
-          'format' => 'full_html',
-          'value' => '',
-        ),
-        'value' => '',
-        'format' => 'full_html',
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'edit' => array(
+            'editability' => 'direct',
+            'wysiwyg' => TRUE,
+          ),
+        ),
         'type' => 'text_default',
         'weight' => 0,
       ),
@@ -370,14 +365,13 @@ function wwm_content_types_field_default_field_instances() {
     'settings' => array(
       'better_formats' => array(
         'allowed_formats' => array(
-          'ds_code' => 0,
-          'filtered_html' => 0,
+          'ds_code' => 'ds_code',
+          'filtered_html' => 'filtered_html',
           'full_html' => 'full_html',
-          'php_code' => 0,
-          'plain_text' => 0,
-          'popup_tags' => 0,
+          'php_code' => 'php_code',
+          'plain_text' => 'plain_text',
         ),
-        'allowed_formats_toggle' => 1,
+        'allowed_formats_toggle' => 0,
         'default_order_toggle' => 0,
         'default_order_wrapper' => array(
           'formats' => array(
@@ -396,13 +390,10 @@ function wwm_content_types_field_default_field_instances() {
             'plain_text' => array(
               'weight' => -8,
             ),
-            'popup_tags' => array(
-              'weight' => 0,
-            ),
           ),
         ),
       ),
-      'display_summary' => 1,
+      'display_summary' => 0,
       'mediafront' => array(
         'custom' => '',
         'field_type' => 0,
@@ -422,6 +413,49 @@ function wwm_content_types_field_default_field_instances() {
       ),
       'type' => 'text_textarea_with_summary',
       'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'node-page-field_teaser'
+  $field_instances['node-page-field_teaser'] = array(
+    'bundle' => 'page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Enter a summary of this page to be shown on the Upper Left of the page itself and the front page',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 1,
+      ),
+      'teaser' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'media_embedded_text_settings' => 'default',
+        ),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_teaser',
+    'label' => 'Teaser',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 1,
     ),
   );
 
@@ -771,6 +805,7 @@ function wwm_content_types_field_default_field_instances() {
   t('Describe the details of the Calendar Item Here.');
   t('Description');
   t('Enter <em>Tags</em> to categorize this post.  You can enter as many tags you wish separated with commas.');
+  t('Enter a summary of this page to be shown on the Upper Left of the page itself and the front page');
   t('Media Player');
   t('Multimedia');
   t('Story');

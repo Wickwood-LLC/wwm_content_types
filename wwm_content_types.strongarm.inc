@@ -725,8 +725,7 @@ function wwm_content_types_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_article_post';
   $strongarm->value = array(
-    0 => 'moderation',
-    1 => 'revision',
+    0 => 'revision',
   );
   $export['node_options_article_post'] = $strongarm;
 
@@ -745,8 +744,7 @@ function wwm_content_types_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_calendar_item';
   $strongarm->value = array(
-    0 => 'moderation',
-    1 => 'revision',
+    0 => 'revision',
   );
   $export['node_options_calendar_item'] = $strongarm;
 
@@ -755,8 +753,7 @@ function wwm_content_types_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_page';
   $strongarm->value = array(
-    0 => 'moderation',
-    1 => 'revision',
+    0 => 'revision',
   );
   $export['node_options_page'] = $strongarm;
 
@@ -765,8 +762,7 @@ function wwm_content_types_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_press_release';
   $strongarm->value = array(
-    0 => 'moderation',
-    1 => 'revision',
+    0 => 'revision',
   );
   $export['node_options_press_release'] = $strongarm;
 
@@ -784,7 +780,7 @@ function wwm_content_types_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_article_post';
-  $strongarm->value = '1';
+  $strongarm->value = '0';
   $export['node_preview_article_post'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -798,21 +794,21 @@ function wwm_content_types_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_calendar_item';
-  $strongarm->value = '1';
+  $strongarm->value = '0';
   $export['node_preview_calendar_item'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_page';
-  $strongarm->value = '1';
+  $strongarm->value = '0';
   $export['node_preview_page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_press_release';
-  $strongarm->value = '1';
+  $strongarm->value = '0';
   $export['node_preview_press_release'] = $strongarm;
 
   $strongarm = new stdClass();

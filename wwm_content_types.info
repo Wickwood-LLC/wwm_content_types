@@ -1,7 +1,7 @@
 name = WWM Content Types
-description = WWM Content Types
+description = Wickwood Marketing content types
 core = 7.x
-package = WWM
+package = Features
 version = 7.x-1.0
 project = wwm_content_types
 features[ctools][] = strongarm:strongarm:1
@@ -23,6 +23,7 @@ features[field_instance][] = node-calendar_item-field_calendar_tags
 features[field_instance][] = node-calendar_item-field_date_and_time
 features[field_instance][] = node-calendar_item-field_description
 features[field_instance][] = node-page-body
+features[field_instance][] = node-page-field_teaser
 features[field_instance][] = node-press_release-body
 features[field_instance][] = node-press_release-field_media_player
 features[field_instance][] = node-press_release-field_pr_about
