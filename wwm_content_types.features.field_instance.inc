@@ -600,42 +600,6 @@ function wwm_content_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-press_release-field_pr_contact'
-  $field_instances['node-press_release-field_pr_contact'] = array(
-    'bundle' => 'press_release',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'location_cck',
-        'settings' => array(),
-        'type' => 'location_default',
-        'weight' => 4,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_pr_contact',
-    'label' => 'Contact',
-    'required' => FALSE,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'module' => 'location_cck',
-      'settings' => array(),
-      'type' => 'location',
-      'weight' => 6,
-    ),
-  );
-
   // Exported field_instance: 'node-press_release-field_pr_multimedia'
   $field_instances['node-press_release-field_pr_multimedia'] = array(
     'bundle' => 'press_release',
@@ -800,7 +764,6 @@ function wwm_content_types_field_default_field_instances() {
   t('About');
   t('Body');
   t('Calendar Tags');
-  t('Contact');
   t('Date and Time');
   t('Describe the details of the Calendar Item Here.');
   t('Description');
