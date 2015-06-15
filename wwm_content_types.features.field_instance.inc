@@ -518,45 +518,6 @@ function wwm_content_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-press_release-field_media_player'
-  $field_instances['node-press_release-field_media_player'] = array(
-    'bundle' => 'press_release',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => NULL,
-        'settings' => array(),
-        'type' => NULL,
-        'weight' => 1,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_media_player',
-    'label' => 'Media Player',
-    'required' => 0,
-    'settings' => array(
-      'show_player' => TRUE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => NULL,
-      'settings' => array(),
-      'type' => NULL,
-      'weight' => 9,
-    ),
-  );
-
   // Exported field_instance: 'node-press_release-field_pr_about'
   $field_instances['node-press_release-field_pr_about'] = array(
     'bundle' => 'press_release',
@@ -597,61 +558,6 @@ function wwm_content_types_field_default_field_instances() {
       ),
       'type' => 'text_textarea',
       'weight' => 5,
-    ),
-  );
-
-  // Exported field_instance: 'node-press_release-field_pr_multimedia'
-  $field_instances['node-press_release-field_pr_multimedia'] = array(
-    'bundle' => 'press_release',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 2,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_pr_multimedia',
-    'label' => 'Multimedia',
-    'required' => 0,
-    'settings' => array(
-      'file_extensions' => 'jpg jpeg gif png txt pdf doc xls ppt pps docx xlsx pptx ppsx numbers pages key odt ods odp mp3 mov m4v mp4 mpeg avi ogg wmv ico',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'media',
-      'settings' => array(
-        'allowed_schemes' => array(
-          'bliptv' => 'bliptv',
-          'flickr' => 'flickr',
-          'node' => 'node',
-          'private' => 'private',
-          'public' => 'public',
-          'vimeo' => 'vimeo',
-          'youtube' => 'youtube',
-        ),
-        'allowed_types' => array(
-          'audio' => 'audio',
-          'default' => 'default',
-          'image' => 'image',
-          'video' => 'video',
-        ),
-        'file_extensions' => 'jpg jpeg gif png txt pdf doc xls ppt pps docx xlsx numbers pages key mp3 mov m4v mp4 mpeg avi ogg wmv',
-        'progress_indicator' => 'throbber',
-      ),
-      'type' => 'media_generic',
-      'weight' => 7,
     ),
   );
 
@@ -769,8 +675,6 @@ function wwm_content_types_field_default_field_instances() {
   t('Description');
   t('Enter <em>Tags</em> to categorize this post.  You can enter as many tags you wish separated with commas.');
   t('Enter a summary of this page to be shown on the Upper Left of the page itself and the front page');
-  t('Media Player');
-  t('Multimedia');
   t('Story');
   t('Tags');
   t('Teaser');

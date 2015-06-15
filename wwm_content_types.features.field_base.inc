@@ -126,25 +126,6 @@ function wwm_content_types_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_pr_multimedia'
-  $field_bases['field_pr_multimedia'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_pr_multimedia',
-    'indexes' => array(
-      'fid' => array(
-        0 => 'fid',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'media',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'media',
-  );
-
   // Exported field_base: 'field_tags'
   $field_bases['field_tags'] = array(
     'active' => 1,
